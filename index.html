@@ -8,68 +8,83 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #303030; /* Hintergrundfarbe grau gemacht */
+            background-color: #f2f2f2; /* Hellgrauer Hintergrund */
             margin: 0;
             padding: 20px;
-            display: flex; /* Flexbox-Container für Inhalt und Beschreibung */
-            justify-content: space-between; /* Zwischen Inhalt und Beschreibung Platz schaffen */
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Zentriert den Inhalt vertikal */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Zentriert den Inhalt horizontal */
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 80%;
         }
         .discord-widget-container {
+            width: 100%;
             max-width: 400px;
-            background-color: #333333; /* Hintergrundfarbe weiß */
-            border-radius: 8px;
+            background-color: #333333;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten leichter gemacht */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
         }
         .discord-widget-header {
-            background-color: #7289da; /* Discord-Blau als Hintergrundfarbe */
-            padding: 20px; /* Größerer Abstand oben und unten */
+            background-color: #7289da;
+            padding: 20px;
             text-align: center;
-            color: #3f3f3f;
+            color: #fff;
             font-weight: bold;
-            border-bottom: 2px solid #4e5d94;
-            border-radius: 8px 8px 0 0; /* Obere Ecken abgerundet */
+            border-radius: 10px 10px 0 0;
         }
         .discord-widget-body {
-            padding: 20px; /* Größerer Innenabstand */
+            padding: 20px;
         }
         .join-link {
             display: block;
             text-align: center;
-            margin-top: 20px; /* Größerer Abstand zum Widget */
+            margin-top: 20px;
             text-decoration: none;
             color: #ffffff;
-            background-color: #465db3;
-            padding: 12px 24px; /* Größere Schaltfläche */
-            border-radius: 25px; /* Runder Button */
-            transition: background-color 0.3s ease; /* Fließende Farbänderung */
+            background-color: #5865f2;
+            padding: 12px 24px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
         }
         .join-link:hover {
-            background-color: #4e5d94; /* Dunklere Farbe beim Hovern */
+            background-color: #4e5d94;
         }
         .description {
-            color: #858484; /* Textfarbe auf weiß geändert */
-            max-width: 50%; /* Maximale Breite für die Beschreibung */
-            padding: 20px; /* Abstand zur Seite und zum Widget */
+            max-width: 50%;
+            text-align: center;
+            color: #777;
         }
     </style>
     <!-- Discord-Logo als Favicon -->
     <link rel="icon" type="image/png" href="https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png">
 </head>
 <body>
-    <div class="discord-widget-container">
-        <div class="discord-widget-header">
-            Willkommen auf daddel gadsen!
+    <div class="container">
+        <div class="discord-widget-container">
+            <div class="discord-widget-header">
+                Willkommen auf daddel gadsen!
+            </div>
+            <div class="discord-widget-body">
+                <iframe src="https://discord.com/widget?id=1232771909603557377&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <a href="https://chrisserver.de" class="join-link" target="_blank">daddel gadsen beitreten</a>
+            </div>
         </div>
-        <div class="discord-widget-body">
-            <iframe src="https://discord.com/widget?id=1232771909603557377&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            <a href="https://chrisserver.de" class="join-link" target="_blank">daddel gadsen beitreten</a>
+        <!-- Beschreibung neben dem Widget -->
+        <div class="description">
+            <h2>Willkommen auf daddel gadsen!</h2>
+            <p>Hier dreht sich alles um Gaming und Spaß. Tritt unserem Discord-Server bei, um mit anderen Spielern zu interagieren.</p>
         </div>
-    </div>
-    <!-- Beschreibung neben dem Widget -->
-    <div class="description">
-        <h2>Willkommen auf daddel gadsen!</h2>
-        <p>Hier dreht sich alles um Gaming und Spaß. Tritt unserem Discord-Server bei, um mit anderen Spielern zu interagieren.</p>
     </div>
 </body>
 </html>
