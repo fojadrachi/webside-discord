@@ -8,14 +8,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Hintergrundfarbe geändert */
+            background-color: #303030; /* Hintergrundfarbe grau gemacht */
             margin: 0;
             padding: 20px;
+            display: flex; /* Flexbox-Container für Inhalt und Beschreibung */
+            justify-content: space-between; /* Zwischen Inhalt und Beschreibung Platz schaffen */
         }
         .discord-widget-container {
             max-width: 400px;
-            margin: 0 auto;
-            background-color: #ffffff; /* Hintergrundfarbe geändert */
+            background-color: #ffffff; /* Hintergrundfarbe weiß */
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten leichter gemacht */
@@ -46,6 +47,11 @@
         .join-link:hover {
             background-color: #4e5d94; /* Dunklere Farbe beim Hovern */
         }
+        .description {
+            color: #ffffff; /* Textfarbe auf weiß geändert */
+            max-width: 50%; /* Maximale Breite für die Beschreibung */
+            padding: 20px; /* Abstand zur Seite und zum Widget */
+        }
     </style>
     <!-- Discord-Logo als Favicon -->
     <link rel="icon" type="image/png" href="https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png">
@@ -59,6 +65,11 @@
             <iframe src="https://discord.com/widget?id=1232771909603557377&theme=light" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             <a href="https://chrisserver.de" class="join-link" target="_blank">daddel gadsen beitreten</a>
         </div>
+    </div>
+    <!-- Beschreibung neben dem Widget -->
+    <div class="description">
+        <h2>Willkommen auf daddel gadsen!</h2>
+        <p>Hier dreht sich alles um Gaming und Spaß. Tritt unserem Discord-Server bei, um mit anderen Spielern zu interagieren, an Veranstaltungen teilzunehmen und neue Freunde zu finden!</p>
     </div>
 </body>
 </html>
