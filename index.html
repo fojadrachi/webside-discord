@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>daddel gadsen</title>
+    <!-- Verbessertes Styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #303030;
+            background-color: #f0f0f0; /* Hintergrundfarbe geändert */
             margin: 0;
             padding: 20px;
         }
         .discord-widget-container {
             max-width: 400px;
             margin: 0 auto;
-            background-color: #313131; /* Discord's gray */
+            background-color: #ffffff; /* Hintergrundfarbe geändert */
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten leichter gemacht */
         }
         .discord-widget-header {
-            background-color: #2b2b2b;
-            padding: 10px;
+            background-color: #7289da; /* Discord-Blau als Hintergrundfarbe */
+            padding: 20px; /* Größerer Abstand oben und unten */
             text-align: center;
             color: #fff;
             font-weight: bold;
             border-bottom: 2px solid #4e5d94;
+            border-radius: 8px 8px 0 0; /* Obere Ecken abgerundet */
         }
         .discord-widget-body {
-            padding: 10px;
+            padding: 20px; /* Größerer Innenabstand */
         }
         .join-link {
             display: block;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 20px; /* Größerer Abstand zum Widget */
             text-decoration: none;
             color: #fff;
             background-color: #7289da;
-            padding: 8px 12px;
-            border-radius: 4px;
+            padding: 12px 24px; /* Größere Schaltfläche */
+            border-radius: 25px; /* Runder Button */
+            transition: background-color 0.3s ease; /* Fließende Farbänderung */
         }
         .join-link:hover {
-            background-color: #4e5d94;
+            background-color: #4e5d94; /* Dunklere Farbe beim Hovern */
         }
     </style>
+    <!-- Discord-Logo als Favicon -->
+    <link rel="icon" type="image/png" href="https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png">
 </head>
 <body>
     <div class="discord-widget-container">
@@ -51,7 +56,7 @@
             Willkommen auf daddel gadsen!
         </div>
         <div class="discord-widget-body">
-            <iframe src="https://discord.com/widget?id=1232771909603557377&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://discord.com/widget?id=1232771909603557377&theme=light" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             <a href="https://chrisserver.de" class="join-link" target="_blank">daddel gadsen beitreten</a>
         </div>
     </div>
