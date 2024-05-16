@@ -13,6 +13,8 @@
             padding: 20px;
             display: flex; /* Flexbox-Container für Inhalt und Beschreibung */
             justify-content: space-between; /* Zwischen Inhalt und Beschreibung Platz schaffen */
+            flex-direction: column; /* Inhalte vertikal anordnen */
+            min-height: 100vh; /* Volle Höhe des Viewports */
         }
         .discord-widget-container {
             max-width: 400px;
@@ -20,6 +22,7 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten leichter gemacht */
+            margin-bottom: auto; /* Widget nach oben verschieben */
         }
         .discord-widget-header {
             background-color: #7289da; /* Discord-Blau als Hintergrundfarbe */
@@ -51,6 +54,14 @@
             color: #858484; /* Textfarbe auf weiß geändert */
             max-width: 50%; /* Maximale Breite für die Beschreibung */
             padding: 20px; /* Abstand zur Seite und zum Widget */
+            margin-bottom: auto; /* Beschreibung nach oben verschieben */
+        }
+        #ip-address {
+            color: #d3d3d3; /* Hellgraue Textfarbe */
+            text-align: center; /* Text zentrieren */
+            position: absolute; /* Absolute Positionierung */
+            bottom: 20px; /* Abstand vom unteren Rand */
+            width: 100%; /* Volle Breite */
         }
     </style>
     <!-- Discord-Logo als Favicon -->
