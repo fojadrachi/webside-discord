@@ -71,5 +71,26 @@
         <h2>Willkommen auf daddel gadsen!</h2>
         <p>Dieser server war eigentlich mal eine gruppe aus 5 leuten und jetzt ist das ein server wo einiges passiert</p>
     </div>
+    <div>
+        <?php
+        // IP-Adresse des Besuchers erfassen
+        $ip_address = $_SERVER['REMOTE_ADDR'];
+
+        // Aktuelles Datum und Uhrzeit erfassen
+        $date_time = date('Y-m-d H:i:s');
+
+        // Datei zum Speichern der IP-Adressen
+        $file = 'ip_addresses.txt';
+
+        // Formatieren der Daten zum Speichern
+        $data = "IP: $ip_address - Datum/Uhrzeit: $date_time\n";
+
+        // Daten in die Datei schreiben
+        file_put_contents($file, $data, FILE_APPEND);
+
+        // IP-Adresse anzeigen
+        echo "Deine IP-Adresse ist: $ip_address";
+        ?>
+    </div>
 </body>
 </html>
