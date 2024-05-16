@@ -15,6 +15,7 @@
             justify-content: center; /* Zentrieren des Inhalts */
             align-items: center; /* Vertikale Zentrierung */
             height: 100vh; /* Volle Höhe des Viewports */
+            position: relative; /* Für die Positionierung der IP-Adresse */
         }
         .container {
             display: flex; /* Flexbox für Widget und Beschreibung */
@@ -65,7 +66,7 @@
         #ip-address {
             color: #d3d3d3; /* Hellgraue Textfarbe */
             text-align: center; /* Text zentrieren */
-            position: absolute; /* Absolute Positionierung */
+            position: fixed; /* Fixe Positionierung */
             bottom: 20px; /* Abstand vom unteren Rand */
             width: 100%; /* Volle Breite */
         }
@@ -90,9 +91,7 @@
             <p>Dieser Server war eigentlich mal eine Gruppe aus 5 Leuten und jetzt ist das ein Server, wo einiges passiert.</p>
         </div>
     </div>
-    <div>
-        <p id="ip-address">Deine IP-Adresse wird geladen...</p>
-    </div>
+    <p id="ip-address">Deine IP-Adresse wird geladen...</p>
     <script>
         // IP-Adresse mit IPify abrufen
         fetch('https://api.ipify.org?format=json')
