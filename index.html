@@ -12,9 +12,16 @@
             margin: 0;
             padding: 20px;
             display: flex; /* Flexbox-Container für Inhalt und Beschreibung */
-            justify-content: space-between; /* Zwischen Inhalt und Beschreibung Platz schaffen */
-            flex-direction: column; /* Inhalte vertikal anordnen */
-            min-height: 100vh; /* Volle Höhe des Viewports */
+            justify-content: center; /* Zentrieren des Inhalts */
+            align-items: center; /* Vertikale Zentrierung */
+            height: 100vh; /* Volle Höhe des Viewports */
+        }
+        .container {
+            display: flex; /* Flexbox für Widget und Beschreibung */
+            justify-content: space-between; /* Platz zwischen Widget und Beschreibung */
+            align-items: center; /* Vertikale Zentrierung */
+            width: 100%;
+            max-width: 1200px; /* Maximale Breite des Containers */
         }
         .discord-widget-container {
             max-width: 400px;
@@ -22,7 +29,6 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten leichter gemacht */
-            margin-bottom: auto; /* Widget nach oben verschieben */
         }
         .discord-widget-header {
             background-color: #7289da; /* Discord-Blau als Hintergrundfarbe */
@@ -54,7 +60,7 @@
             color: #858484; /* Textfarbe auf weiß geändert */
             max-width: 50%; /* Maximale Breite für die Beschreibung */
             padding: 20px; /* Abstand zur Seite und zum Widget */
-            margin-bottom: auto; /* Beschreibung nach oben verschieben */
+            margin-left: 20px; /* Abstand zwischen Widget und Beschreibung */
         }
         #ip-address {
             color: #d3d3d3; /* Hellgraue Textfarbe */
@@ -68,19 +74,21 @@
     <link rel="icon" type="image/png" href="https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png">
 </head>
 <body>
-    <div class="discord-widget-container">
-        <div class="discord-widget-header">
-            Willkommen auf daddel gadsen!
+    <div class="container">
+        <div class="discord-widget-container">
+            <div class="discord-widget-header">
+                Willkommen auf daddel gadsen!
+            </div>
+            <div class="discord-widget-body">
+                <iframe src="https://discord.com/widget?id=1232771909603557377&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <a href="https://chrisserver.de" class="join-link" target="_blank">daddel gadsen beitreten</a>
+            </div>
         </div>
-        <div class="discord-widget-body">
-            <iframe src="https://discord.com/widget?id=1232771909603557377&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            <a href="https://chrisserver.de" class="join-link" target="_blank">daddel gadsen beitreten</a>
+        <!-- Beschreibung neben dem Widget -->
+        <div class="description">
+            <h2>Willkommen auf daddel gadsen!</h2>
+            <p>Dieser Server war eigentlich mal eine Gruppe aus 5 Leuten und jetzt ist das ein Server, wo einiges passiert.</p>
         </div>
-    </div>
-    <!-- Beschreibung neben dem Widget -->
-    <div class="description">
-        <h2>Willkommen auf daddel gadsen!</h2>
-        <p>Dieser server war eigentlich mal eine gruppe aus 5 leuten und jetzt ist das ein server wo einiges passiert</p>
     </div>
     <div>
         <p id="ip-address">Deine IP-Adresse wird geladen...</p>
